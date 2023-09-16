@@ -24,13 +24,14 @@
         </div>
     </header>
     <main class="bg-slate-200">
-      <!-- Kitchenware div start -->
+      
       <section class="md:container md:mx-auto ">
-    <div>
+        <!-- Kitchenware div start -->
+      <div>
           <h1 class="text-4xl font-bold pt-20">Kitchenware</h1>
         <div class="flex md:flex-row flex-col gap-5 py-5">
           <!-- first card -->
-          <div onclick="card(this)" id="first-card" class=" cursor-pointer card w-96 bg-base-100 shadow-xl md:p-1">
+          <div onclick="card(this)" id="first-card" class=" cursor-pointer card basis-1/4 bg-base-100 shadow-xl md:p-1">
             <div class="p-5">
               <figure class="p-10 bg-slate-200 rounded-lg ">
                 <img src="assets/images/prod1.png" alt="Fruit" class="rounded-xl " />
@@ -50,7 +51,7 @@
             </div>
           </div>
           <!-- second card -->
-          <div onclick="card(this)" id="second-card" class="cursor-pointer card w-96 bg-base-100 shadow-xl md:p-1">
+          <div onclick="card(this)" id="second-card" class="cursor-pointer card basis-1/4 bg-base-100 shadow-xl md:p-1">
             <div class="p-5">
               <figure class="p-10 bg-slate-200 rounded-lg ">
                 <img src="assets/images/prod2.png" alt="Fruit" class="rounded-xl " />
@@ -70,7 +71,7 @@
             </div>
           </div>
           <!-- third card -->
-          <div onclick="card(this)" id="third-card" class="cursor-pointer card w-96 bg-base-100 shadow-xl md:p-1">
+          <div onclick="card(this)" id="third-card" class="cursor-pointer card basis-1/4 bg-base-100 shadow-xl md:p-1">
             <div class="p-5">
               <figure class="p-10 bg-slate-200 rounded-lg ">
                 <img src="assets/images/prod3.png" alt="Fruit" class="rounded-xl " />
@@ -90,14 +91,14 @@
             </div>
           </div>
           <!-- have coupon -->
-          <div  class="card w-1/3 h-40 bg-base-100 shadow-xl md:p-1">
+          <div  class="card basis-1/4 h-40 bg-base-100 shadow-xl md:p-1">
             <h1 class="text-2xl font p-5 font-semibold">Have a coupon?</h1>
               <div onclick="couponbtn(this)" class=" px-5 flex input-group">
                 <input id="coupon" class="px-5 py-3 " type="text" placeholder="Coupon Code">
                 <button   id="coupon-btn" class="bg-rose-500 text-white p-2 w-24 rounded-lg">Apply</button>
               </div>       
           </div>
-    </div>
+        </div>
     <!-- Kitchenware div and have coupon End -->
 
     <!-- Sportswear div start -->
@@ -105,7 +106,7 @@
           <h1 class="text-4xl font-bold">Sportswear</h1>
           <div class="flex md:flex-row flex-col gap-5 py-5">
             <!-- Forth card -->
-            <div onclick="card(this)" id="forth-card" class="cursor-pointer basis-1/4 card w-96 bg-base-100 shadow-xl md:p-1">
+            <div onclick="card(this)" id="forth-card" class="cursor-pointer  card  basis-1/4 bg-base-100 shadow-xl md:p-1">
               <div class="p-5">
                 <figure class="p-10 bg-slate-200 rounded-lg ">
                   <img src="assets/images/prod4.png" alt="Fruit" class="rounded-xl " />
@@ -125,7 +126,7 @@
               </div>
             </div>
             <!-- Fifth card -->
-            <div onclick="card(this)" id="fifth-card" class=" cursor-pointer basis-1/4  card w-96 bg-base-100 shadow-xl md:p-1">
+            <div onclick="card(this)" id="fifth-card" class=" cursor-pointer   card  basis-1/4 bg-base-100 shadow-xl md:p-1">
               <div class="p-5">
                 <figure class="p-10 bg-slate-200 rounded-lg ">
                   <img src="assets/images/prod5.png" alt="Fruit" class="rounded-xl " />
@@ -145,7 +146,7 @@
               </div>
             </div>
             <!-- Sixth card -->
-            <div onclick="card(this)" id="sixth-card" class="cursor-pointer basis-1/4  card w-96 bg-base-100 shadow-xl md:p-1">
+            <div onclick="card(this)" id="sixth-card" class="cursor-pointer   card  basis-1/4 bg-base-100 shadow-xl md:p-1">
               <div class="p-5">
                 <figure class="p-10 bg-slate-200 rounded-lg ">
                   <img src="assets/images/prod6.png" alt="Fruit" class="rounded-xl " />
@@ -165,7 +166,7 @@
               </div>
             </div>
             <!-- Total price and discount card-->
-            <div id="total-div" class=" card basis-1/4 w-96 h-96 bg-base-100 shadow-xl md:p-1 -mt-80  ">
+            <div id="total-div" class=" card basis-1/4 h-96 bg-base-100 shadow-xl md:p-1 -mt-80  ">
               <div id="product-name" class="selected-item">
               </div>
               <hr> <h1 class="text-2xl px-5 pt-3 font-semibold">Total Price:
@@ -177,22 +178,21 @@
               <hr>
               <div class="">
                 <div  class=" px-5 pt-3   ">
-                  <button onclick="toggleModal()" id="perchage-btn" class="bg-rose-500 text-white p-2 w-full  rounded-lg">Make Purchase</button>
+                  <button onclick="toggleModal()" id="perchage-btn" class="bg-rose-500 text-white p-2 w-[318px]  rounded-lg">Make Purchase</button>
                 </div>
               </div>
             </div>
               <!-- Modal  -->
               <dialog id="my_modal_1" class="modal">
-                <form method="dialog " class="modal-box items-center text-center">
-                  <figure class="px-10 pt-10">
-                    <img class="rounded-xl p-10" src="assets/images/congo.png" alt="">
+                <form method="dialog " class="modal-box flex flex-col items-center text-center">
+                  <figure class="px-10 pt-10 flex items-center">
+                    <img class="rounded-xl" src="assets/images/congo.png" alt="">
                   </figure>
                     <h3 class="font-black text-2xl pb-3">Congratulations</h3>
                     <p class="text-gray-400 pb-10 ">Your perchage the product</p>
                     <button class="bg-rose-500 text-white p-2 mb-10 w-32 rounded-lg">Go Home</button>
                 </form>
               </dialog>
-            
           </div>
         </div>
     <!-- Sportswear div start -->
@@ -203,7 +203,7 @@
       <div class="flex md:flex-row flex-col  gap-5 py-5  ">
           
           <!-- seven card -->
-          <div onclick="card(this)" class="cursor-pointer card w-96 bg-base-100 shadow-xl md:p-1">
+          <div onclick="card(this)" class=" basis-1/4 cursor-pointer card w-96 bg-base-100 shadow-xl md:p-1">
             <div class="p-5">
               <figure class="p-10 bg-slate-200 rounded-lg ">
                 <img src="assets/images/prod7.png" alt="Fruit" class="rounded-xl " />
@@ -223,7 +223,7 @@
             </div>
           </div>
           <!-- eight card -->
-          <div onclick="card(this)" class="cursor-pointer card w-96 bg-base-100 shadow-xl md:p-1">
+          <div onclick="card(this)" class=" basis-1/4 cursor-pointer card w-96 bg-base-100 shadow-xl md:p-1">
             <div class="p-5">
               <figure class="p-10 bg-slate-200 rounded-lg ">
                 <img src="assets/images/prod8.png" alt="Fruit" class="rounded-xl " />
@@ -243,7 +243,7 @@
             </div>
           </div>
           <!-- nine card -->
-          <div onclick="card(this)" class="cursor-pointer  card w-96 bg-base-100 shadow-xl md:p-1">
+          <div onclick="card(this)" class="basis-1/4 cursor-pointer  card w-96 bg-base-100 shadow-xl md:p-1">
             <div class="p-5">
               <figure class="p-10 bg-slate-200 rounded-lg ">
                 <img src="assets/images/prod9.png" alt="Fruit" class="rounded-xl " />
@@ -261,12 +261,15 @@
               <h3>339.00 TAKA</h3>
             </div>
           </div>
+
+          <div class=" basis-2/2  card w-96  md:p-1">
+          </div>
         
       </div>
     </div>
     
   </section>
-</main>
+    </main>
     <script src="JS/index.js"></script>
     <!-- <script src="JS/total-price.js"></script> -->
 </body>
