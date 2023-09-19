@@ -27,10 +27,17 @@
 
   function toggleModal() {
     const myModal = document.getElementById('my_modal_1');
-    if (myModal.open) {
-      myModal.close();
-    } else {
-      myModal.showModal();
+
+    if(total > 0){
+      myModal.disabled = false;
+        if (myModal.open) {
+         myModal.close();
+        } else {
+        myModal.showModal();
+        }
+    }
+    else{
+      myModal.disabled = true;
     }
   }
 
